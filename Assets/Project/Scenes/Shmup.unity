@@ -354,6 +354,7 @@ GameObject:
   - component: {fileID: 595601980}
   - component: {fileID: 595601985}
   - component: {fileID: 595601986}
+  - component: {fileID: 595601987}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -465,6 +466,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 1091789411782392, guid: 5e58ac6c1752c8b43a15f77f05abadb9, type: 2}
   speed: 5
+  timer: 0
+  reload: 0.5
+--- !u!114 &595601987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 595601979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fabe0a718a065a04ba1424f3ec0d86cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startH: 3
 --- !u!1001 &714001635
 Prefab:
   m_ObjectHideFlags: 0

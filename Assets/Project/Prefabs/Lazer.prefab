@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23439019700504702}
   - component: {fileID: 54051161277276380}
   - component: {fileID: 114664895486638100}
+  - component: {fileID: 114985505081338768}
   m_Layer: 8
   m_Name: Lazer
   m_TagString: Bullet
@@ -109,7 +110,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fd2a4e3f7e619540b896ae0386ab9e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpan: 1
+  bulletSpan: 2
+--- !u!114 &114985505081338768
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1091789411782392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be11952b0c367144b77adffefb5a8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!136 &136993657726216820
 CapsuleCollider:
   m_ObjectHideFlags: 1

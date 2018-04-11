@@ -4,9 +4,23 @@ using UnityEngine;
 
 public class BulletDamage : MonoBehaviour
 {
-    void OnCollisionEnter(Collision other)
+    public float damage;
+
+    void Start()
     {
 
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.layer == 10)
+        {
+            IDamageable blah = other.collider.GetComponent<IDamageable>();
+            if(blah != null)
+            {
+                blah.applyDamage(damage);
+            }
+        }
     }
 	
 }
